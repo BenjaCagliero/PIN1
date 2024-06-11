@@ -11,7 +11,7 @@ router.get('/add/:a/:b', (ctx, next) => {
 });
 
 app
-  .use(router.routes())
+  .use(router.routes());
   .use(router.allowedMethods());
 
 app.listen(process.env.PORT || 3000);
